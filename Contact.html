@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link rel="stylesheet" href="/Contact.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css" />
+
+  <title>Contact</title>
+</head>
+
+<body>
+  <header>
+    <div class="head-wrap">
+      <p class="Logo">Creative</p>
+      <div class="nav">
+        <ul>
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="/Products.html">Products</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+          <li><a href="/About.html">About</a></li>
+        </ul>
+      </div>
+      <button class="head-button">
+        <a href="/login/index.html"> Login</a>
+      </button>
+    </div>
+    <h2>We're here to help.</h2>
+    <p id="header-p">We always want to hear from you! Let us know how we can best help you and we'll do our very best.
+    </p>
+  </header>
+  <div class="main-box">
+    <div class="office-cards">
+      <div class="contact-card">
+        <img src="/Files/Newyork.jpg" />
+        <h3>New York Office</h3>
+        <p><i class="fas fa-map-marker-alt"></i>St.luis Avenue-street.4 </p>
+        <p><i class="fas fa-phone-alt"></i>2389198427</p>
+        <p><i class="fas fa-envelope"></i>Creative@gmail.com</p>
+        <button class="find-btn">
+      </div>
+      <div class="contact-card">
+        <img src="/Files/Moscow.jpg" />
+        <h3>Moscow Office</h3>
+        <p><i class="fas fa-map-marker-alt"></i>Stalin Square-street.6 </p>
+        <p><i class="fas fa-phone-alt"></i>42983719234</p>
+        <p><i class="fas fa-envelope"></i>Creative@gmail.com</p>
+        <button class="find-btn">
+      </div>
+      <div class="contact-card">
+        <img src="/Files/Paris.jpg" />
+        <h3>Paris Office</h3>
+        <p><i class="fas fa-map-marker-alt"></i>Von del Square-street.17 </p>
+        <p><i class="fas fa-phone-alt"></i>2389198427</p>
+        <p><i class="fas fa-envelope"></i>Creative@gmail.com</p>
+        <button class="find-btn">
+      </div>
+    </div>
+    <hr style="width: 75%; margin:0 auto;">
+    <h2>Let us hear from you directly!</h2>
+    <h5>We always want to hear from you! Let us know how we can best help you and we'll do our very best.</h5>
+    <div class="contact-box">
+      <div class="form-box">
+        <form>
+          <div class="input-field">
+            <input type="text" id="name" />
+            <label class="active" for="name">Name</label>
+          </div>
+          <div class="input-field">
+            <input type="email" id="email" class="validate" />
+            <label class="active" for="email">E-mail</label>
+          </div>
+          <div class="input-field">
+            <textarea type="email" id="textarea" class="materialize-textarea"></textarea>
+            <label class="active" for="textarea">Text Area</label>
+          </div>
+        </form>
+        <div class="send-btn">
+          <button>Send Message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="map" style="height: 70vh; width:100%;"></div>
+
+  <div id="footer">
+    <div style="align-items: center; ">
+      <h2 >Creative</h2>
+      <p style="margin:-20px 0 -13px 0;">A better way to build</p>
+      <div id="social">
+        <i class="fab fa-instagram"></i>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-youtube"></i>
+        <i class="fab fa-linkedin"></i>
+      </div>
+    </div>
+    <div>
+      <h3>Features</h3>
+      <ul>
+      <li><a href="#">Sell Themes</a></li>
+      <li><a href="#">Materialise Elements</a></li>
+      <li><a href="#">Boostrap Components</a></li>
+      <li><a href="#">Responsive</a></li>
+    </ul>
+    </div>
+    <div>
+      <h3>Services</h3>
+      <ul>
+      <li><a href="#">Promotion</a></li>
+      <li><a href="#">Analysis & Statistics</a></li>
+      <li><a href="#">Marketting</a></li>
+      <li><a href="#">Innovation & Technology</a></li>
+    </ul>
+    </div>
+    <div>
+      <h3>Useful Links</h3>
+      <ul>
+      <li><a href="#">Portfolio</a></li>
+      <li><a href="#">Contacts</a></li>
+      <li><a href="#">F.A.Q</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+    </ul>
+    </div>
+  </div>
+
+  <script>
+    function initMap() {
+      var location = { lat: 53.904392, lng: 27.549164 };
+      var map = new google.maps.Map(document.getElementById("map"),
+        {
+          zoom: 8,
+          center: location
+        });
+      var marker = new google.maps.Marker({
+        position: location,
+        map: map
+      });
+    }
+  </script>
+
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDuCV3KIbDtAs93qocGL2WZnstzj_fQfCY&callback=initMap"
+    type="text/javascript"></script>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+
+  
+</body>
+
+</html>

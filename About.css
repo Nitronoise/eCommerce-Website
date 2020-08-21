@@ -1,0 +1,336 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  font-family: Calibri;
+}
+header {
+  width: 100%;
+
+  background-size: cover;
+}
+.head-wrap {
+  width: 100%;
+  height: 60px;
+  color: rgb(46, 41, 62);
+  display: flex;
+  justify-content: center;
+}
+.Logo {
+  font-size: 30px;
+  font-family: "Oleo Script", cursive;
+  line-height: 60px;
+  display: flex;
+  color: #4cade2;
+}
+.nav {
+  width: 64%;
+  align-self: center;
+  display: flex;
+}
+.nav a {
+  text-decoration: none;
+  color: rgb(95, 95, 95);
+}
+
+.nav ul {
+  display: flex;
+  width: 60%;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+}
+.nav li {
+  list-style: none;
+  text-decoration: none;
+  justify-content: center;
+  font-family: Calibri;
+  font-size: 20px;
+  align-self: center;
+}
+.nav ul li:hover a {
+  cursor: pointer;
+  color: #4cade2;
+}
+.head-wrap .h-btn {
+  background-color: #4cade2;
+  border: none;
+  font-size: 18px;
+  display: flex;
+  align-self: center;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.head-wrap .h-btn:hover {
+  background-color: rgb(31, 31, 32);
+  transition: ease-in-out 0.4s;
+}
+.head-wrap .h-btn a {
+  text-decoration: none;
+  color: white;
+}
+.head-wrap .h-btn a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* ------------------------------------------------------------------------------ */
+.page-intro {
+  flex-direction: column;
+  display: flex;
+  width: 75%;
+  margin: 70px auto;
+  align-items: center;
+  font-family: Calibri;
+}
+.page-intro h1 {
+  font-size: 45px;
+  font-weight: 400;
+  color: rgb(31, 31, 32);
+}
+.page-intro p {
+  font-size: 30px;
+  font-weight: 200;
+  color: rgb(122, 122, 122);
+  text-align: center;
+  width: 70%;
+  margin-top: 15px;
+}
+/* ------------------------------------------------------------------------------ */
+.info-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 80%;
+  height: 40vh;
+  margin: 0 auto;
+}
+.info-box .info-title {
+  width: 30%;
+  display: flex;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.info-box .info-para {
+  display: flex;
+  width: 50%;
+  font-size: 18px;
+}
+/* ------------------------------------------------------------------------------ */
+.box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+  justify-content: space-evenly;
+  margin: 40px auto 0 auto;
+  align-items: center;
+  background-color: rgb(242, 247, 247);
+}
+.box .text-box {
+  display: flex;
+  width: 60%;
+  margin: 50px auto;
+  text-align: center;
+}
+.box .text-box h1 {
+  color: rgb(31, 31, 32);
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 50px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.elements {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  width: 80%;
+  height: 30%;
+}
+.element-1,
+.element-2,
+.element-3 {
+  color: rgb(31, 31, 32);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: Calibri;
+  width: 30%;
+}
+.elements h2 {
+  font-size: 45px;
+  font-weight: 300;
+  color: #4cade2;
+}
+.elements i {
+  font-size: 38px;
+  color: #d3d3d3;
+}
+.elements p {
+  color: #717171;
+  font-size: 17px;
+}
+/* ------------------------------------------------------------------------------ */
+.image-box {
+  width: 100%;
+  background: url(/Files/office2.jpg) no-repeat;
+  background-size: 60%;
+  height: 95vh;
+  margin: 0 500px 0 0;
+}
+.image-box .square-box {
+  height: 330px;
+  width: 340px;
+  float: right;
+  top: 50px;
+  right: 60px;
+  position: relative;
+  padding: 60px;
+  color: rgb(59, 59, 59);
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 23px;
+  /*box-shadow: 0 15px 15px 15px rgba(128, 128, 128, 0.082);*/
+  text-align: left;
+}
+.image-box .square-box p {
+  margin: 28px 0;
+  color: rgb(71, 71, 71);
+  font-size: 15px;
+}
+.image-box .square-box h2 {
+  text-transform: uppercase;
+  font-size: 35px;
+}
+.image-box .square-box h2 .txt-type {
+  color: #4cade2;
+  border-right: 0.2rem solid #677;
+}
+.image-box .square-box ul {
+  list-style: none;
+  font-size: 15px;
+  color: rgb(133, 133, 133);
+}
+
+.image-box .square-box ul li {
+  margin-bottom: 10px;
+}
+/* ------------------------------------------------------------------------------ */
+.ad-text {
+  width: 100%;
+  height: 120vh;
+}
+.ad-text h1 {
+  font-size: 36px;
+  color: rgb(71, 71, 71);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 auto;
+  font-weight: 500;
+}
+.ad-text h1 .txt-type {
+  color: #4cade2;
+}
+
+.ad-text p {
+  font-size: 22px;
+  color: rgb(71, 71, 71);
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.case-studies {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  height: 80%;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+.case-study {
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  background-blend-mode: screen;
+  background: linear-gradient(360deg, black, #4cade2),
+    url(/Files/suit.jpg) center;
+}
+.case-study p {
+  color: white;
+}
+.case-study h2 {
+  text-transform: uppercase;
+}
+.case-study .far,
+.aud {
+  font-size: 40px;
+  margin: 25% 0 50% 0;
+}
+/* ------------------------------------------------------------------------------ */
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(214, 214, 214);
+  margin-top: 50px;
+  width: 100%;
+  color: rgb(31, 31, 32);
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  height: 40vh;
+  justify-content: center;
+}
+
+footer h2 {
+  color: #4cade2;
+  font-family: "Oleo Script", cursive;
+}
+footer h3 {
+  padding-bottom: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-evenly;
+  align-items: left;
+  height: 50%;
+  margin: 0 35px;
+}
+
+.social {
+  display: flex;
+  height: 40px;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.social .fab {
+  font-size: 20px;
+  color: white;
+}
+
+.social .fab:hover {
+  color: #4cade2;
+  cursor: pointer;
+}
