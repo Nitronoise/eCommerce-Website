@@ -1,0 +1,380 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  font-family: Calibri;
+}
+nav {
+  background-color: #4cade2;
+}
+.nav-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  font-family: "Oleo Script", cursive;
+}
+.nav-wrapper li a {
+  font-size: 17px;
+}
+header {
+  height: 20vh;
+  width: 100%;
+}
+
+.Logo {
+  font-size: 30px;
+  font-family: "Oleo Script", cursive;
+  line-height: 60px;
+  display: flex;
+  color: #4cade2;
+}
+
+/* ------------------------------------------------------------------------------ */
+.intro-container {
+  height: auto;
+  width: 70%;
+  max-width: 1000px;
+  margin: 0 auto 50px auto;
+  text-align: center;
+  color: rgb(32, 32, 32);
+}
+.intro-container h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.intro-container p {
+  font-size: 25px;
+  width: 85%;
+  margin: 0 auto;
+  color: rgb(77, 77, 77);
+}
+.products {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.product-box {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+.product-box .box {
+  width: 100%;
+  height: auto;
+  box-shadow: 0 10px 13px #81818163;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.product-box .box:hover {
+  cursor: pointer;
+}
+
+.product-box .box:hover .thumbnail .btns button {
+  opacity: 1;
+}
+.product-box .box .thumbnail {
+  width: 100%;
+  min-height: 350px;
+  background-image: url(../Files/Themes/1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+}
+
+.product-box .box .thumbnail .btns button {
+  color: white;
+  background-color: #4cade2;
+  border-radius: 3px;
+  padding: 5px 10px;
+  border-style: none;
+  font-size: 15px;
+  transition: ease-in-out 0.2s;
+  margin: 10px 2px;
+  opacity: 0;
+}
+.product-box .box .thumbnail .btns button:hover {
+  cursor: pointer;
+  background-color: rgb(31, 31, 32);
+}
+
+.product-box .box .info h3 {
+  color: rgb(50, 50, 51);
+  font-size: 16px;
+  font-weight: 500;
+}
+.product-box .box .info h4 {
+  color: rgb(141, 141, 141);
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.product-box .box .info {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 0 10px 10px 10px;
+}
+.title,
+.rating {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 38px;
+}
+
+.product-box .box .info i {
+  font-size: 15px;
+  color: yellow;
+}
+/*! ----------------------------------------Case Studies-------------------------------------- */
+.ad-text {
+  margin: 80px auto;
+  width: 100%;
+  height: auto;
+}
+.ad-text h1 {
+  font-size: 35px;
+  color: rgb(71, 71, 71);
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px auto 20px auto;
+  font-weight: 500;
+}
+.ad-text h1 .txt-type {
+  color: #4cade2;
+}
+.ad-text p {
+  font-size: 22px;
+  color: rgb(71, 71, 71);
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+}
+.case-studies {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  max-width: 1000px;
+  height: auto;
+  align-items: center;
+  margin: 0 auto;
+  justify-content: space-evenly;
+}
+
+.case-study {
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 500px;
+  width: 350px;
+  color: white;
+  background-color: rgb(31, 31, 32);
+}
+.b {
+  margin: 0 -60px;
+  height: 530px;
+  width: 380px;
+  z-index: 1000;
+  background-color: #4cade2;
+}
+.case-study .case-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+.case-study p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.case-study h2 {
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.case-study .mo {
+  font-size: 27px;
+}
+.case-study i {
+  font-size: 17px;
+}
+.case-study .btn-offers {
+  padding: 13px 23px;
+  background-color: #4cade2;
+  font-size: 20px;
+  border-style: none;
+  color: white;
+  transition: ease-in-out 0.3s;
+  margin-top: 25px;
+}
+.case-study .btn-offers:hover {
+  background-color: teal;
+  cursor: pointer;
+}
+
+/*! ------------------------------------------------------------------------------ */
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(214, 214, 214);
+  margin-top: 200px;
+  width: 100%;
+  color: rgb(31, 31, 32);
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  height: 40vh;
+  justify-content: center;
+}
+
+footer h2 {
+  color: #4cade2;
+  font-family: "Oleo Script", cursive;
+}
+footer h3 {
+  line-height: 10px;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-evenly;
+  align-items: left;
+  height: 50%;
+  margin: 0 35px;
+}
+
+.social {
+  display: flex;
+  height: 40px;
+  width: 60%;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-direction: row;
+}
+
+.social .fab {
+  font-size: 20px;
+  color: white;
+}
+
+.social .fab:hover {
+  color: #4cade2;
+  cursor: pointer;
+}
+/*--------------------------------------------------------------------*/
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(214, 214, 214);
+  width: 100%;
+  color: rgb(31, 31, 32);
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  height: 250px;
+  justify-content: center;
+}
+footer h2 {
+  color: #4cade2;
+  font-family: "Oleo Script", cursive;
+  font-size: 27px;
+}
+footer p {
+  margin: -10px 0 10px 0;
+}
+footer h3 {
+  font-size: 23px;
+  line-height: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  margin: 0 35px;
+}
+.social {
+  display: flex;
+  height: 40px;
+  width: 120px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-direction: row;
+}
+.social .fab {
+  font-size: 20px;
+  color: white;
+}
+.social .fab:hover {
+  color: #4cade2;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .ad-text h1 {
+    font-size: 30px;
+    width: 80%;
+    margin-top: 80px;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    padding: 30px 0;
+  }
+  footer div {
+    width: auto;
+  }
+  .product-box {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: auto;
+    width: 70%;
+  }
+  .case-studies {
+    flex-direction: column;
+  }
+  .case-study {
+    margin: 10px auto 30px auto;
+    height: 430px;
+    width: 350px;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer h3 {
+    font-size: 18px;
+  }
+  .product-box {
+    width: 90%;
+  }
+}

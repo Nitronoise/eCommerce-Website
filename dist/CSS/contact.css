@@ -1,0 +1,266 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: white;
+  font-family: Calibri;
+}
+nav {
+  background-color: #4cade2;
+}
+.nav-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.brand-logo {
+  font-family: "Oleo Script", cursive;
+  margin-left: -50%;
+}
+.nav-wrapper li a {
+  font-size: 17px;
+}
+header {
+  width: 100%;
+  background-size: cover;
+  height: 600px;
+  background-repeat: no-repeat;
+  background-image: url(../Files/Themes/Background-shade.png);
+  background-position: bottom;
+  color: rgb(243, 243, 243);
+  text-align: center;
+}
+header h2 {
+  margin-top: 170px;
+  font-size: 4rem;
+}
+#header-p {
+  font-size: 1.8rem;
+  width: 50%;
+  margin: 0 auto;
+  color: rgb(192, 192, 192);
+  font-weight: 400;
+}
+
+/* ------------------------------------------------------------------------------ */
+.main-box {
+  width: 100%;
+  margin: 0 auto;
+}
+.main-box h2 {
+  text-align: center;
+}
+.main-box h5 {
+  color: rgb(192, 192, 192);
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
+.office-cards {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 50px auto;
+}
+
+.contact-card h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: rgb(31, 31, 32);
+}
+.contact-card i {
+  margin: 10px;
+  color: #4cade2;
+}
+.contact-card img {
+  height: 200px;
+  width: 300px;
+}
+.contact-title h2 {
+  font-size: 40px;
+}
+.contact-title h5 {
+  min-width: 300px;
+}
+.contact-title {
+  width: 80%;
+  margin: 0 auto;
+}
+/*-----------------------------------------*/
+.form-box {
+  width: 40%;
+}
+.form-box .send-btn {
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+.form-box button {
+  color: white;
+  border-style: none;
+  background-color: #4cade2;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: ease-in-out 0.3s;
+  margin: 0 auto;
+}
+.form-box button:hover {
+  background-color: rgb(31, 31, 32);
+}
+.input-field textarea {
+  max-height: 200px;
+}
+.contact-box {
+  width: 85%;
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.form-box button {
+  background-color: #4cade2;
+  margin: 0 auto;
+  transition: ease-in-out 0.3s;
+}
+.form-box button:hover {
+  background-color: rgb(31, 31, 32);
+}
+#map {
+  width: 45%;
+  height: 350px;
+  border-radius: 10px;
+  border: solid 2px #4cade228;
+}
+
+/* ------------------------------------------------------------------------------ */
+footer {
+  display: flex;
+  flex-direction: row;
+  border-top: 1px solid rgb(214, 214, 214);
+  width: 100%;
+  color: rgb(31, 31, 32);
+  align-items: center;
+  background-color: rgb(32, 32, 32);
+  color: white;
+  height: 250px;
+  justify-content: center;
+}
+footer h2 {
+  color: #4cade2;
+  font-family: "Oleo Script", cursive;
+  font-size: 27px;
+}
+footer p {
+  margin: -10px 0 10px 0;
+}
+footer h3 {
+  font-size: 23px;
+  line-height: 10px;
+}
+footer a {
+  text-decoration: none;
+  color: rgb(156, 156, 156);
+}
+footer div {
+  display: flex;
+  flex-direction: column;
+  width: 15%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 150px;
+  margin: 0 35px;
+}
+.social {
+  display: flex;
+  height: 40px;
+  width: 120px;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  flex-direction: row;
+}
+.social .fab {
+  font-size: 20px;
+  color: white;
+}
+.social .fab:hover {
+  color: #4cade2;
+  cursor: pointer;
+}
+@media screen and (max-width: 1050px) {
+  .brand-logo {
+    margin: 0;
+  }
+  .main-box .office-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+  }
+  .office-cards .contact-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card img {
+    width: 280px;
+    height: auto;
+  }
+  .main-box .contact-box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-title {
+    margin-top: 50px;
+  }
+  .form-box {
+    width: 80%;
+    margin-bottom: 50px;
+  }
+  .contact-box {
+    height: auto;
+  }
+  #map {
+    width: 80%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    padding: 30px 0;
+  }
+  footer div {
+    width: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer h3 {
+    font-size: 18px;
+  }
+  header h2 {
+    font-size: 40px;
+  }
+  #header-p {
+    font-size: 22px;
+  }
+  .main-box .office-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact-card img {
+    width: 330px;
+  }
+  .office-cards .contact-card {
+    align-items: flex-start;
+  }
+  .form-box,
+  #map {
+    width: 90%;
+  }
+}

@@ -2,36 +2,40 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
-        integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="/About.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@700&display=swap" rel="stylesheet">
+  <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="stylesheet" href="./CSS/about.css" />
 
-    <title>About</title>
+
+  <title>About</title>
 </head>
 
 <body>
-    <header>
-        <div class="head-wrap">
-            <p class="Logo">Creative</p>
-            <div class="nav">
-                <ul>
-                    <li><a href="/Home.html">Home</a></li>
-                    <li><a href="/Products.html">Products</a></li>
-                    <li><a href="/Contact.html">Contact</a></li>
-                    <li><a href="/About.html">About</a></li>
-                </ul>
+  <header>
+        <nav>
+            <div class="nav-wrapper">
+              <a href="./index.html" class="brand-logo">Creative</a>
+              <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+              <ul class="right hide-on-med-and-down">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+              </ul>
+              <ul class="side-nav" id="mobile-demo">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./services.html">Services</a></li>
+                 <li><a href="./contact.html">Contact</a></li>
+              </ul>
             </div>
-            <button class="h-btn">
-                <a href="/login/index.html"> Login</a>
-            </button>
-        </div>
+          </nav>
     </header>
 
     <body>
@@ -50,8 +54,8 @@
         </div>
         <div class="info-box">
             <div class="info-title">
-                <h3 >Founded in Ukraine in <span style="color: #4cade2;"> 2010 </span> by
-                    four partners</h3>
+                <h4 >Founded in Ukraine in <span style="color: #4cade2;"> 2010 </span> by
+                    four partners</h4>
             </div>
             <div class="info-para"><p>We counsel our clients on their likings and preferences, 
                 leveraging our deep industry expertise and using desgin and coding skills to help 
@@ -60,29 +64,7 @@
                 Our experience in this field is vast and we have tons of satisfied clients and 
                 some of them are parts of big known companies.</p></div>
         </div>
-    <div class="box">
-        <div class="text-box">
-            <h1>Unique designs with high compatibility </h1>
-        </div>
-        <div class="elements">
-            <div class="element-1">
-                <i class="fab fa-connectdevelop"></i>
-              <h2 class="num">10,000</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, dicta.</p>
-            </div>
-        
-            <div class="element-2">
-                <i class="fas fa-award"></i>
-              <h2 class="num">5000</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, dicta.</p>
-            </div>
-            <div class="element-3">
-                <i class="fab fa-buromobelexperte"></i>
-              <h2 class="num">300</h2>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam, dicta.</p>
-            </div>
-          </div>
-    </div>
+    
     <div class="image-box">
         <div class="square-box">
             <h2>We make your website
@@ -106,22 +88,22 @@
             using our proven winning formula consisting of expertise.</p>
             <div class="case-studies">
                 <div class="case-study" style="background: linear-gradient(360deg, black, #4cade2),
-                url(/Files/pcs.jpg) right ;">
+                url(./Files/pcs.jpg) right ;">
                     <i class="far fa-chart-bar"></i>
                     <h2>Accounting for MIO</h2>
                     <p>Accounting</p>
                 </div>
         
-                <div class="case-study" 
-                style="margin:0 -80px; height: 530px; width: 420px;z-index: 1000;">
+                <div class="case-study centered" 
+                >
                 
-                <i class="fab fa-audible aud"></i>
+                <i class="fab fa-audible"></i>
                     <h2>Strategy for talk</h2>
                     <p>Audit</p>
                 </div>
             
                 <div class="case-study" style="background: linear-gradient(360deg, black, #4cade2),
-                url(/Files/gadgets.jpg) top;">
+                url(./Files/gadgets.jpg) top;">
                     <i class="far fas fa-chalkboard"></i>
                     <h2>Designing the pages</h2>
                     <p>Design</p>
@@ -149,9 +131,9 @@
         <div>
           <h3>Services</h3>
           <a href="#">Promotion</a>
-          <a href="#">Analysis & Statistics</a>
+          <a href="#">Analysis</a>
           <a href="#">Marketting</a>
-          <a href="#">Innovation & Technology</a>
+          <a href="#">Innovation</a>
         </div>
         <div>
           <h3>Useful Links</h3>
@@ -161,10 +143,43 @@
           <a href="#">Privacy Policy</a>
         </div>
       </footer>
-    <script type="text/javascript">
-        $(".num").counterUp({ delay: 10, time: 1000 });
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <script>
+        AOS.init({ duration: 1400 });
       </script>
-      <script src="/JS/Type-write.js"></script>
+      <script src="./JS/Type-write.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+           <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    
+           <script>
+              $(".button-collapse").sideNav();
+           </script>
+           <script
+           type="text/javascript"
+           src="https://code.jquery.com/jquery-2.1.1.min.js"
+         ></script>
+         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+         <script>
+           $(document).ready(function () {
+             // Init Carousel
+             $(".carousel").carousel();
+     
+             // Init Carousel Slider
+             $(".carousel.carousel-slider").carousel({ fullWidth: true });
+     
+             // Fire off toast
+             //Materialize.toast('Hello World', 3000);
+     
+             // Init Slider
+             $(".slider").slider();
+     
+             // Init Modal
+             $(".modal").modal();
+     
+             // Init Sidenav
+             $(".button-collapse").sideNav();
+           });
+         </script>
       
     </body>
 

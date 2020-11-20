@@ -6,74 +6,19 @@ body {
   background-color: white;
   font-family: Calibri;
 }
-header {
-  width: 100%;
-
-  background-size: cover;
+nav {
+  background-color: #4cade2;
 }
-.head-wrap {
-  width: 100%;
-  height: 60px;
-  color: rgb(46, 41, 62);
-  display: flex;
-  justify-content: center;
-}
-.Logo {
-  font-size: 30px;
-  font-family: "Oleo Script", cursive;
-  line-height: 60px;
-  display: flex;
-  color: #4cade2;
-}
-.nav {
-  width: 64%;
-  align-self: center;
-  display: flex;
-}
-.nav a {
-  text-decoration: none;
-  color: rgb(95, 95, 95);
-}
-
-.nav ul {
-  display: flex;
-  width: 60%;
-  flex-direction: row;
-  justify-content: space-evenly;
+.nav-wrapper {
+  width: 80%;
   margin: 0 auto;
 }
-.nav li {
-  list-style: none;
-  text-decoration: none;
-  justify-content: center;
-  font-family: Calibri;
-  font-size: 20px;
-  align-self: center;
+
+.brand-logo {
+  font-family: "Oleo Script", cursive;
 }
-.nav ul li:hover a {
-  cursor: pointer;
-  color: #4cade2;
-}
-.head-wrap .h-btn {
-  background-color: #4cade2;
-  border: none;
-  font-size: 18px;
-  display: flex;
-  align-self: center;
-  padding: 10px 15px;
-  border-radius: 5px;
-}
-.head-wrap .h-btn:hover {
-  background-color: rgb(31, 31, 32);
-  transition: ease-in-out 0.4s;
-}
-.head-wrap .h-btn a {
-  text-decoration: none;
-  color: white;
-}
-.head-wrap .h-btn a:hover {
-  color: white;
-  text-decoration: none;
+.nav-wrapper li a {
+  font-size: 17px;
 }
 /* ------------------------------------------------------------------------------ */
 .page-intro {
@@ -88,6 +33,7 @@ header {
   font-size: 45px;
   font-weight: 400;
   color: rgb(31, 31, 32);
+  text-align: center;
 }
 .page-intro p {
   font-size: 30px;
@@ -105,12 +51,11 @@ header {
   align-items: center;
   width: 80%;
   height: 40vh;
-  margin: 0 auto;
+  margin: 50px auto;
 }
-.info-box .info-title {
-  width: 30%;
+.info-title {
+  width: 25%;
   display: flex;
-  font-size: 30px;
   text-transform: uppercase;
 }
 .info-box .info-para {
@@ -118,85 +63,29 @@ header {
   width: 50%;
   font-size: 18px;
 }
-/* ------------------------------------------------------------------------------ */
-.box {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  height: 80vh;
-  justify-content: space-evenly;
-  margin: 40px auto 0 auto;
-  align-items: center;
-  background-color: rgb(242, 247, 247);
-}
-.box .text-box {
-  display: flex;
-  width: 60%;
-  margin: 50px auto;
-  text-align: center;
-}
-.box .text-box h1 {
-  color: rgb(31, 31, 32);
-  text-transform: capitalize;
-  font-weight: 200;
-  font-size: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-}
-.elements {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin: 0 auto;
-  width: 80%;
-  height: 30%;
-}
-.element-1,
-.element-2,
-.element-3 {
-  color: rgb(31, 31, 32);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  font-family: Calibri;
-  width: 30%;
-}
-.elements h2 {
-  font-size: 45px;
-  font-weight: 300;
-  color: #4cade2;
-}
-.elements i {
-  font-size: 38px;
-  color: #d3d3d3;
-}
-.elements p {
-  color: #717171;
-  font-size: 17px;
-}
+
 /* ------------------------------------------------------------------------------ */
 .image-box {
   width: 100%;
-  background: url(/Files/office2.jpg) no-repeat;
-  background-size: 60%;
-  height: 95vh;
-  margin: 0 500px 0 0;
+  background: url(../Files/office2.jpg) no-repeat;
+  background-size: 80%;
+  height: 550px;
+  margin: 50px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
-.image-box .square-box {
+.square-box {
+  background-color: white;
   height: 330px;
-  width: 340px;
-  float: right;
-  top: 50px;
-  right: 60px;
-  position: relative;
-  padding: 60px;
+  width: 440px;
+  margin-right: 100px;
+  padding: 25px 0 25px 50px;
   color: rgb(59, 59, 59);
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: 23px;
   /*box-shadow: 0 15px 15px 15px rgba(128, 128, 128, 0.082);*/
-  text-align: left;
 }
 .image-box .square-box p {
   margin: 28px 0;
@@ -205,7 +94,8 @@ header {
 }
 .image-box .square-box h2 {
   text-transform: uppercase;
-  font-size: 35px;
+  font-size: 25px;
+  width: 230px;
 }
 .image-box .square-box h2 .txt-type {
   color: #4cade2;
@@ -215,6 +105,7 @@ header {
   list-style: none;
   font-size: 15px;
   color: rgb(133, 133, 133);
+  width: 260px;
 }
 
 .image-box .square-box ul li {
@@ -223,15 +114,15 @@ header {
 /* ------------------------------------------------------------------------------ */
 .ad-text {
   width: 100%;
-  height: 120vh;
+  margin: 80px auto;
 }
 .ad-text h1 {
-  font-size: 36px;
+  font-size: 30px;
   color: rgb(71, 71, 71);
   text-transform: uppercase;
   text-align: center;
-  margin: 0 auto;
-  font-weight: 500;
+  margin: 25px auto;
+  font-weight: 700;
 }
 .ad-text h1 .txt-type {
   color: #4cade2;
@@ -242,12 +133,13 @@ header {
   color: rgb(71, 71, 71);
   width: 60%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto 30px auto;
 }
 .case-studies {
   display: flex;
   flex-direction: row;
   width: 90%;
+  max-width: 1100px;
   height: 80%;
   align-items: center;
   margin: 0 auto;
@@ -266,18 +158,27 @@ header {
   color: white;
   background-blend-mode: screen;
   background: linear-gradient(360deg, black, #4cade2),
-    url(/Files/suit.jpg) center;
+    url(../Files/suit.jpg) center;
+}
+.centered {
+  margin: 0 -60px;
+  height: 530px;
+  width: 420px;
+  z-index: 3;
 }
 .case-study p {
   color: white;
 }
 .case-study h2 {
   text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 600;
+  width: 130px;
 }
-.case-study .far,
-.aud {
-  font-size: 40px;
-  margin: 25% 0 50% 0;
+.far,
+.fab {
+  font-size: 30px;
+  margin: 80px 0;
 }
 /* ------------------------------------------------------------------------------ */
 .grid {
@@ -297,56 +198,59 @@ header {
 .img-1 {
   grid-row: 1/6;
   grid-column: 1/4;
-  background-image: url(/Files/Small/1.jpg);
+  background-image: url(../Files/Small/1.jpg);
 }
 .img-2 {
   grid-row: 1/4;
   grid-column: 4/6;
-  background-image: url(/Files/Small/2.jpg);
+  background-image: url(../Files/Small/2.jpg);
 }
 .img-3 {
   grid-row: 4/6;
   grid-column: 4/6;
-  background-image: url(/Files/Small/3.jpg);
+  background-image: url(../Files/Small/3.jpg);
 }
 .img-4 {
   grid-row: 1/3;
   grid-column: 6/8;
-  background-image: url(/Files/Small/4.jpg);
+  background-image: url(../Files/Small/4.jpg);
 }
 .img-5 {
   grid-row: 1/3;
   grid-column: 8/11;
-  background-image: url(/Files/Small/5.jpg);
+  background-image: url(../Files/Small/5.jpg);
 }
 .img-6 {
   grid-row: 3/6;
   grid-column: 6/11;
-  background-image: url(/Files/Small/6.jpg);
+  background-image: url(../Files/Small/6.jpg);
 }
 /* ------------------------------------------------------------------------------ */
 footer {
   display: flex;
   flex-direction: row;
   border-top: 1px solid rgb(214, 214, 214);
-  margin-top: 50px;
   width: 100%;
   color: rgb(31, 31, 32);
   align-items: center;
   background-color: rgb(32, 32, 32);
   color: white;
-  height: 40vh;
+  height: 250px;
   justify-content: center;
+  margin-bottom: 0;
 }
-
 footer h2 {
   color: #4cade2;
   font-family: "Oleo Script", cursive;
+  font-size: 27px;
+}
+footer p {
+  margin-bottom: -10px;
 }
 footer h3 {
-  padding-bottom: 10px;
+  font-size: 23px;
+  line-height: 10px;
 }
-
 footer a {
   text-decoration: none;
   color: rgb(156, 156, 156);
@@ -356,26 +260,133 @@ footer div {
   flex-direction: column;
   width: 15%;
   justify-content: space-evenly;
-  align-items: left;
-  height: 50%;
+  align-items: center;
+  height: 150px;
   margin: 0 35px;
 }
-
 .social {
   display: flex;
   height: 40px;
-  width: 60%;
+  width: 120px;
   justify-content: space-evenly;
   margin: 0 auto;
   flex-direction: row;
 }
-
 .social .fab {
   font-size: 20px;
   color: white;
 }
-
 .social .fab:hover {
   color: #4cade2;
   cursor: pointer;
+}
+/*-------------------------Media Queries------------------------*/
+@media screen and (max-width: 1000px) {
+  .page-intro {
+    width: 90%;
+  }
+  .grid {
+    height: 270px;
+  }
+  .info-box {
+    height: auto;
+    margin: 40px auto;
+  }
+  .info-box h3 {
+    font-size: 35px;
+  }
+  .image-box {
+    background: url(../Files/office2.jpg);
+    width: 100%;
+    margin: 0 auto;
+    justify-content: center;
+  }
+  .image-box .square-box {
+    width: 400px;
+    height: auto;
+    margin: 0;
+    padding: 20px 0 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(248, 248, 248);
+  }
+  .image-box .square-box p {
+    width: 240px;
+    margin: 0 0 17px 0;
+  }
+  .case-study h2 {
+    margin: 0;
+    font-size: 20px;
+    width: 200px;
+  }
+  .case-studies {
+    flex-direction: column;
+    height: auto;
+  }
+  .case-study {
+    width: 70%;
+    height: 200px;
+  }
+  .centered {
+    width: 75% !important;
+    height: 200px !important;
+  }
+  .case-study h2 {
+    width: auto;
+  }
+  .far,
+  .fab {
+    font-size: 23px;
+    margin: 30px 0 30px 0;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: auto;
+    padding: 30px 0;
+  }
+  footer div {
+    width: auto;
+  }
+}
+@media screen and (max-width: 700px) {
+  footer h3 {
+    font-size: 18px;
+  }
+  .ad-text {
+    width: 90%;
+  }
+  .page-intro h1 {
+    font-size: 37px;
+  }
+  .page-intro p {
+    font-size: 27px;
+  }
+
+  .info-box {
+    flex-direction: column;
+  }
+  .info-box .info-title {
+    width: 80%;
+  }
+  .info-box .info-para {
+    width: 80%;
+  }
+  .image-box {
+    background: inherit;
+    height: auto;
+  }
+  .image-box .square-box {
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+  }
+  .case-study {
+    width: 80%;
+  }
+  .centered {
+    width: 85% !important;
+  }
 }
