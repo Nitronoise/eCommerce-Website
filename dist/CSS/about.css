@@ -355,24 +355,36 @@ footer div {
   footer h3 {
     font-size: 18px;
   }
-  .ad-text {
-    width: 90%;
+
+  .page-intro {
+    width: 95%;
   }
   .page-intro h1 {
-    font-size: 37px;
+    font-size: 35px;
   }
   .page-intro p {
     font-size: 27px;
+    width: 90%;
   }
-
   .info-box {
     flex-direction: column;
+    width: 95%;
   }
   .info-box .info-title {
     width: 80%;
   }
   .info-box .info-para {
     width: 80%;
+  }
+  .ad-text {
+    width: 95%;
+  }
+  .ad-text h1 {
+    font-size: 30px;
+    width: 90%;
+  }
+  .ad-text p {
+    width: 90%;
   }
   .image-box {
     background: inherit;

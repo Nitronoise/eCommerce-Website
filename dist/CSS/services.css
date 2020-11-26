@@ -341,11 +341,22 @@ footer div {
 }
 
 @media screen and (max-width: 1000px) {
+  .intro-container {
+    width: 90%;
+  }
+
+  .ad-text {
+    width: 90%;
+  }
   .ad-text h1 {
-    font-size: 30px;
+    font-size: 25px;
     width: 80%;
     margin-top: 80px;
   }
+  .ad-text p {
+    width: 80%;
+  }
+
   footer {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
