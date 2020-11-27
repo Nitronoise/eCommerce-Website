@@ -17,6 +17,11 @@ nav {
 .brand-logo {
   font-family: "Oleo Script", cursive;
 }
+.side-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .nav-wrapper li a {
   font-size: 17px;
 }
@@ -384,6 +389,9 @@ footer div {
 @media screen and (max-width: 700px) {
   footer h3 {
     font-size: 18px;
+  }
+  footer p {
+    width: auto;
   }
   .product-box {
     width: 90%;

@@ -13,7 +13,11 @@ nav {
   width: 80%;
   margin: 0 auto;
 }
-
+.side-nav {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 .brand-logo {
   font-family: "Oleo Script", cursive;
 }
@@ -272,7 +276,7 @@ nav {
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: Calibri;
   display: flex;
   justify-content: center;
   height: 220px;
@@ -319,13 +323,13 @@ nav {
   width: 80%;
   height: 500px;
   margin: 0 auto;
+  font-family: Calibri;
 }
 .adv-text-code {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  font-family: Calibri;
 }
 .adv-text-code h2 {
   color: rgb(31, 31, 32);
@@ -388,6 +392,7 @@ nav {
   margin: 40px auto 0 auto;
   align-items: center;
   background-color: rgb(242, 247, 247);
+  font-family: Calibri;
 }
 .text-box {
   display: flex;
@@ -400,7 +405,6 @@ nav {
   text-transform: capitalize;
   font-weight: 200;
   font-size: 50px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 .elements {
   display: flex;
@@ -642,5 +646,8 @@ footer div {
   .banner {
     width: 90%;
     margin-top: 30px;
+  }
+  footer p {
+    width: auto;
   }
 }
