@@ -1,8 +1,4 @@
-### Deployed on creative-dev.netlify.app
+## Deployed on creative-dev.netlify.app
 
-### Designed pages:
-  - Home
-  - Contact
-  - Products
-  - About 
+### E-commerce website for displaying products and giving information about the company
   
